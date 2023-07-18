@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #020024 10%, #090979 35%, #1095af 100%);
+  /* background: radial-gradient(#0000 10%, #090979 20%); */
+  background-size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-instructor {
+  display: contents;
+}
+
+.header-content {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: auto;
+  background-color: #000000f2;
+}
+
+.instructions-image-container {
+  display: grid;
+  align-items: center;
+  border: 2px solid #fff;
+}
+
+.instructions-image-container h4 {
+  padding: 17px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instructions-image-container img {
+  width: 480px;
+  padding: 20px;
+  height: auto;
+}
+
+.container-content {
+  padding: 30px 40px;
+  margin: auto;
+  width: 35%;
+  min-width: 500px;
+}
+
+.new-task-container {
+  background-color: #fff;
+  box-shadow: 0 15px 30px #000000e7;
+  border-radius: 4px;
+  display: flex;
+  padding: 30px 20px;
+}
+
+.new-task-input {
+  flex: 3;
+  border-radius: 4px;
+  border: 2px solid #dfdfdf;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.new-task-input:focus {
+  border-style: outset;
+  outline: none;
+  border-color: #0cd7e6;
+}
+
+.new-task-btn {
+  flex: 1;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 4px;
+  background-color: #0a39d3;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 12px;
+  margin-left: 12px;
+}
+
+.tasks-list-container {
+  padding: 30px 20px;
+  background-color: #fff;
+  margin-top: 60px;
+  width: 100%;
+  box-shadow: 0 15px 30px #000000d2;
+  border-radius: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px;
+}
+
+p {
+  word-break: break-word;
+}
+
+.completed {
+  color: #0a39d3;
+  word-break: break-word;
+}
+
+.completed::after {
+  content: "concluído";
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 7px;
+  background-color: #0a39d38c;
+  color: #008000;
+  margin: 2px;
+  padding: 2px;
+}
+
+.task-item i {
+  background-color: #0a39d3;
+  color: #fff;
+  padding: 11px;
+  margin: 10px;
+  border-radius: 4px;
+  transition: 0.1s;
+}
+
+.task-item i:hover {
+  cursor: pointer;
+  background-color: #0cd7e6;
+}
+
+.error {
+  border: 2px solid #ff0000 !important;
+}
+
+.error::placeholder {
+  color: #ff0000;
+}
